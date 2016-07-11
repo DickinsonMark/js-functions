@@ -19,6 +19,8 @@ sum(3, 5)
     console.log("WARNING UNNACCEPTABLE DISCOUNT");
   } else {
     var decimal = discount / 100;
+    console.log("discount is: " amount * decimal);
+
     var total =  amount -(amount * decimal);
     console.log("total: $" + total);
   };
@@ -26,6 +28,5 @@ sum(3, 5)
 
 // #4
 function stringCapitalize(string) {
-  var stringArray = string.split(" ");
-  for 
-}
+  var result =
+  if
