@@ -28,5 +28,26 @@ sum(3, 5)
 
 // #4
 function stringCapitalize(string) {
-  var result =
-  if
+  var result = ""
+  for (i = 0; i < string.length; i++) {
+    if (string[i-1] === " " || i === 0) {
+      result += string[i].toUpperCase();
+    } else {
+      result += string[i];
+    }
+  }
+  return result;
+};
+
+console.log(stringCapitalize("hello how are you?"));
+
+// #5
+function evenNumbers(num) {
+  for (i = 0; i <= num; i++) {
+    if (i % 2 === 0) {
+      console.log(i);
+    }
+  }
+}
+
+evenNumbers(10);
