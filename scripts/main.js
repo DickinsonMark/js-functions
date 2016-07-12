@@ -77,19 +77,28 @@ isDivisible(36, 12); // true
 
 // #7 Bonus!
 function oddNumbers(numb){
-  if (numb < 40) {
-    for (i = 0; i <= 40; i++) {
-      if (i % 2 !== 0) {
-        console.log(i);
-      }
+  numb = parseInt(numb);
+  if (numb.isInteger()) {
+    if (numb < 0 || numb > 100) {
+      return "number needs to be between 0 - 100";
+    } else {
+      if (numb < 40) {
+        for (i = 0; i <= 40; i++) {
+          if (i % 2 !== 0) {
+            console.log(i);
+          }
+        };
+      } else {
+        for (j = 40; j <= numb; j++) {
+          if (j % 2 !== 0){
+            console.log(j)
+          };
+        };
+      };
     };
   } else {
-    for (j = 40; j <= numb; j++) {
-      if (j % 2 !== 0){
-        console.log(j)
-      }
-    };
-  }
+    return "input a number!";
+  };
 };
 
 oddNumbers(38); // 1 3 5 ... 37 39
