@@ -78,7 +78,7 @@ isDivisible(36, 12); // true
 // #7 Bonus!
 function oddNumbers(numb){
   numb = parseInt(numb);
-  if (numb.isInteger()) {
+  if (isInteger(numb)) {
     if (numb < 0 || numb > 100) {
       return "number needs to be between 0 - 100";
     } else {
